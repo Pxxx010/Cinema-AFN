@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+.card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.trailer-button {
+    display: block;
+    text-align: center;
+    margin: 10px auto; /* Adicionando margem superior e inferior e centralizando horizontalmente */
+    width: 80px; /* Definindo uma largura fixa para o botão */
+}
+
+
+.card button:hover {
+    background-color: #00b30f;
+}
+
+a {
+    text-decoration: none;
+}
