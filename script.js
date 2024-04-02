@@ -1,14 +1,15 @@
-// Espera até que o DOM esteja completamente carregado
-document.addEventListener('DOMContentLoaded', function () {
+    // Espera até que o DOM esteja cohorariompletamente carregado
+    document.addEventListener('DOMContentLoaded', function () {
     // Obtém a data e hora atuais
-    var data = new Date();
+    let data = new Date();
+    let hora = data.getHours() + ':' + data.getMinutes(); // Obtém a hora atual (0 a 23) e os minutos atuais (0 a 59)
     // Obtém o dia da semana atual (0 para Domingo, 1 para Segunda, ..., 6 para Sábado)
-    var diaSemana = data.getDay();
+    let diaSemana = data.getDay();    
 
     // Seleciona todos os elementos com o ID 'horario-semana'
-    var horariosSemana = document.querySelectorAll('#horario-semana');
+    let horariosSemana = document.querySelectorAll('#horario-semana');
     // Seleciona todos os elementos com o ID 'horario-fim-de-semana'
-    var horariosFimDeSemana = document.querySelectorAll('#horario-fim-de-semana');
+    let horariosFimDeSemana = document.querySelectorAll('#horario-fim-de-semana');
 
     // Verifica se é um dia da semana (Segunda a Sexta)
     if (diaSemana >= 1 && diaSemana <= 5) {
@@ -24,4 +25,4 @@ document.addEventListener('DOMContentLoaded', function () {
             horario.style.color = 'green';
         });
     }
-});
+    });
